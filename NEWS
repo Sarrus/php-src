@@ -12,6 +12,14 @@ PHP                                                                        NEWS
   . Fixed bug #79934 (CRLF-only line in heredoc causes parsing error).
     (Pieter van den Ham)
 
+- COM:
+  . Fixed bug #48585 (com_load_typelib holds reference, fails on second call).
+    (cmb)
+
+- Exif:
+  . Fixed bug #75785 (Many errors from exif_read_data).
+    (Níckolas Daniel da Silva)
+
 - Gettext:
   . Fixed bug #70574 (Tests fail due to relying on Linux fallback behavior for
     gettext()). (Florian Engelhardt)
@@ -23,9 +31,18 @@ PHP                                                                        NEWS
   . Fixed bug #73060 (php failed with error after temp folder cleaned up).
     (cmb)
 
+- PDO:
+  . Fixed bug #64705 (errorInfo property of PDOException is null when
+    PDO::__construct() fails). (Ahmed Abdou)
+
 - Standard:
   . Fixed bug #79930 (array_merge_recursive() crashes when called with array
     with single reference). (Nikita)
+  . Fixed bug #79944 (getmxrr always returns true on Alpine linux). (Nikita)
+  . Fixed bug #79951 (Memory leak in str_replace of empty string). (Nikita)
+
+- XML:
+  . Fixed bug #79922 (Crash after multiple calls to xml_parser_free()). (cmb)
 
 06 Aug 2020, PHP 7.3.21
 
